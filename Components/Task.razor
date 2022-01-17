@@ -1,0 +1,24 @@
+<link href="/css/roundButton.css" rel="stylesheet" />
+<link href="/css/task.css" rel="stylesheet" />
+
+<div class="taskContainer">
+    <input 
+        type="checkbox" 
+        @bind="@TaskData.isDone"
+        class="checkInput"
+    />
+    <span class="checkbox"/>
+    <div class="titleContainer">
+        <span>@TaskData.title</span>
+    </div>
+    <RoundButton 
+        Title="X"
+        Styles="roundButton removeTaskButton"
+        OnClick="RemoveTask"
+    />
+</div>
+
+@code {
+    [Parameter] public TaskItem TaskData {get; set;}
+    [Parameter] public EventCallback RemoveTask {get; set;}
+}

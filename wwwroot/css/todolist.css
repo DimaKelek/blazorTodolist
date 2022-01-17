@@ -1,0 +1,48 @@
+.container {
+    position: relative;
+    width: 280px;
+    height: 360px;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+    background-color: rgb(241, 240, 240);
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.addItemContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tasksContainer {
+    height: 250px;
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #36a2e7;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #214cc6;
+}

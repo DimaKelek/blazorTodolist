@@ -1,0 +1,63 @@
+.taskContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    /* background-color: #123; */
+}
+
+.titleContainer {
+    width: 170px;
+}
+
+.checkInput {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 1px black;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.checkbox::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(58, 185, 245);
+    opacity: 0;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.checkInput:checked + .checkbox::before {
+    opacity: 1;
+}
+
+.checkInput:focus + .checkbox {
+    box-shadow:
+            0 0 0 1px black,
+            0 0 0 2px greenyellow;
+}
+
+.checkInput:disabled + .checkbox {
+    background-color: gray;
+    box-shadow: 0 0 0 1px gray;
+}
+.checkInput:disabled + .checkbox::before {
+    background-color: gray;
+}

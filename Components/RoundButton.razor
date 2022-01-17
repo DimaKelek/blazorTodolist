@@ -1,0 +1,7 @@
+<button class="@Styles" @onclick="(() => OnClick.InvokeAsync())">@Title</button>
+
+@code {
+    [Parameter] public string Title {get; set;} = "";
+    [Parameter] public string Styles {get; set;} = "";
+    [Parameter] public EventCallback OnClick {get; set;}
+}
