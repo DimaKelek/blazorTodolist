@@ -1,0 +1,26 @@
+.roundButton[b-y443y92udp] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    color: #ffffff;
+    background-color: #6596ee;
+}
+
+.roundButton:hover[b-y443y92udp] {
+    cursor: pointer;
+    background-color: #1d49aa;
+    transition: .2s;
+}
+
+.addButton[b-y443y92udp] {
+    background-color: #6596ee;
+}
+
+.addButton:hover[b-y443y92udp] {
+    background-color: #1d49aa;
+}

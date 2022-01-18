@@ -1,3 +1,184 @@
+/* _content/BlazorApp/Components/IconButton.razor.rz.scp.css */
+.iconButton[b-xf6ojyj5t7] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 13px;
+    font-size: 12px;
+    margin: 10px;
+    transition: .3s;
+}
+
+.iconButton:hover[b-xf6ojyj5t7] {
+    cursor: pointer;
+}
+
+.removeTaskButton[b-xf6ojyj5t7] {
+    position: absolute;
+    right: 0;
+    color: #fff;
+    background-color: #6596ee;
+}
+
+.removeTaskButton:hover[b-xf6ojyj5t7] {
+    background-color: #1d49aa;  
+}
+
+.removeTodoButton[b-xf6ojyj5t7] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(87, 87, 87);
+    color: #fff;
+}
+
+.removeTodoButton:hover[b-xf6ojyj5t7] {
+    background-color: rgb(51, 51, 51);
+}
+/* _content/BlazorApp/Components/RoundButton.razor.rz.scp.css */
+.roundButton[b-y443y92udp] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    border: 0;
+    width: 38px;
+    height: 38px;
+    border-radius: 19px;
+    color: #ffffff;
+    background-color: #6596ee;
+}
+
+.roundButton:hover[b-y443y92udp] {
+    cursor: pointer;
+    background-color: #1d49aa;
+    transition: .2s;
+}
+
+.addButton[b-y443y92udp] {
+    background-color: #6596ee;
+}
+
+.addButton:hover[b-y443y92udp] {
+    background-color: #1d49aa;
+}
+/* _content/BlazorApp/Components/Task.razor.rz.scp.css */
+.taskContainer[b-tfb96akqof] {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+}
+
+.titleContainer[b-tfb96akqof] {
+    width: 160px;
+}
+
+.checkInput[b-tfb96akqof] {
+    position: absolute;
+    z-index: 1;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+}
+
+.checkbox[b-tfb96akqof] {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 0 1px black;
+    position: relative;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.checkbox[b-tfb96akqof]::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgb(58, 185, 245);
+    opacity: 0;
+    transition: .2s;
+    border-radius: 5px;
+}
+
+.checkInput:checked + .checkbox[b-tfb96akqof]::before {
+    opacity: 1;
+}
+
+.checkInput:focus + .checkbox[b-tfb96akqof] {
+    box-shadow:
+            0 0 0 1px black,
+            0 0 0 2px greenyellow;
+}
+
+.checkInput:disabled + .checkbox[b-tfb96akqof] {
+    background-color: gray;
+    box-shadow: 0 0 0 1px gray;
+}
+.checkInput:disabled + .checkbox[b-tfb96akqof]::before {
+    background-color: gray;
+}
+/* _content/BlazorApp/Components/Todolist.razor.rz.scp.css */
+.container[b-vndcwqmx44] {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+    width: 280px;
+    height: 370px;
+    margin: 10px;
+    position: relative;
+    background-color: rgb(241, 240, 240);
+}
+
+.title[b-vndcwqmx44] {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.addItemContainer[b-vndcwqmx44] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tasksContainer[b-vndcwqmx44] {
+    height: 260px;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+[b-vndcwqmx44]::-webkit-scrollbar {
+    width: 15px;
+}
+
+[b-vndcwqmx44]::-webkit-scrollbar-thumb {
+    background: #36a2e7;
+    border-radius: 8px;
+}
+
+[b-vndcwqmx44]::-webkit-scrollbar-track {
+    background-color: rgb(241, 240, 240);
+}
 /* _content/BlazorApp/Shared/MainLayout.razor.rz.scp.css */
 .page[b-3dsd3z3yec] {
     position: relative;

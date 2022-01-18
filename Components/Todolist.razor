@@ -1,19 +1,16 @@
-<link href="/css/roundButton.css" rel="stylesheet" />
-<link href="/css/todolist.css" rel="stylesheet" />
-
 <div class="container">
     <span class="title">@Title</span>
-    <RoundButton 
-        Title="X" 
-        Styles="roundButton removeTodoButton" 
-        OnClick="RemoveTodoList"
+    <IconButton 
+        Icon="delete" 
+        OnClick="(() => RemoveTodoList.InvokeAsync())"
+        Styles="removeTodoButton"
     />
     <div class="addItemContainer">
         <input placeholder="Task title ..." class="addItemInput" @bind="newTaskTitle"/>
         <RoundButton 
             Title="+" 
             Styles="roundButton addButton"
-            OnClick="AddTask"
+            OnClick="@AddTask"
         />
     </div>
     <div class="tasksContainer">
@@ -21,28 +18,11 @@
             <span>No tasks</span>
         } else {
             @foreach (var taskItem in Tasks) {
-                <Task 
+                <Task
                     TaskData="taskItem"
                     RemoveTask="(() => RemoveTask(taskItem))"
                 />
             }
         }
     </div>
-    
 </div>
-
-@code {
-    [Parameter] public string Title {get; set;}
-    [Parameter] public EventCallback RemoveTodoList {get; set;}
-    [Parameter] public List<TaskItem> Tasks {get; set;}
-    private string newTaskTitle;
-    private void AddTask() {
-        if (!string.IsNullOrWhiteSpace(newTaskTitle)) {
-            Tasks.Add(new TaskItem { title = newTaskTitle, isDone = false });
-            newTaskTitle = string.Empty;
-        }
-    }
-    private void RemoveTask(TaskItem removedTask) {
-        Tasks.Remove(removedTask);
-    }
-}

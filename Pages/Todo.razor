@@ -6,47 +6,20 @@
 
 <div class="rootWrapper">
     <div class="addTodoContainer">
-        <input placeholder="Todolist title ..." @bind="newTodolistTitle" class="addItemInput"/>
+        <input 
+            placeholder="Todolist title ..." 
+            @bind="newTodolistTitle" 
+            class="addItemInput"
+        />
         <button @onclick="AddTodolist" class="button">Add todo</button>
     </div>
     <div class="todolistsContainer">
         @foreach (var todoItem in todoLists) {
             <Todolist
                 Title="@todoItem.title"
-                RemoveTodoList="(() => RemoveTodolist(todoItem))"
                 Tasks="@todoItem.tasks"
+                RemoveTodoList="(() => RemoveTodolist(todoItem))"
             />
         }
     </div>
 </div>
-
-@code {
-    private List<TodoItem> todoLists = new List<TodoItem>() {
-        new TodoItem() {
-            title = "Test todo 1",
-            tasks = new List<TaskItem>()
-        },
-        new TodoItem() {
-            title = "Test todo 2",
-            tasks = new List<TaskItem>()
-        },
-        new TodoItem() {
-            title = "Test todo 3",
-            tasks = new List<TaskItem>()
-        },
-        new TodoItem() {
-            title = "Test todo 4",
-            tasks = new List<TaskItem>()
-        }
-    };
-    private string newTodolistTitle;
-    private void AddTodolist() {
-        if (!string.IsNullOrWhiteSpace(newTodolistTitle)) {
-            todoLists.Add(new TodoItem { title = newTodolistTitle, tasks = new List<TaskItem>() });
-            newTodolistTitle = string.Empty;
-        }
-    }
-    private void RemoveTodolist(TodoItem removedItem) {
-        todoLists.Remove(removedItem);
-    }
-}

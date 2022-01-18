@@ -19,18 +19,6 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Work/.Net/BlazorApp/Components/RoundButton.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3VuZEJ1dHRvbi5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Work/.Net/BlazorApp/Components/Task.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXNrLnJhem9y
-build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Work/.Net/BlazorApp/Components/Todolist.razor]
-build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb2RvbGlzdC5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/Work/.Net/BlazorApp/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/Work/.Net/BlazorApp/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Work/.Net/BlazorApp/Components/IconButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJY29uQnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-xf6ojyj5t7
+
+[D:/Work/.Net/BlazorApp/Components/RoundButton.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3VuZEJ1dHRvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-y443y92udp
+
+[D:/Work/.Net/BlazorApp/Components/Task.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUYXNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-tfb96akqof
+
+[D:/Work/.Net/BlazorApp/Components/Todolist.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xUb2RvbGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-vndcwqmx44
 
 [D:/Work/.Net/BlazorApp/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=

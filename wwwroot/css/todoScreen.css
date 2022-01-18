@@ -8,9 +8,14 @@
 
 .todolistsContainer {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
-    /* background-color: #123; */
+    justify-content: flex-start;
+}
+
+.todoItemContainer {
+    display: flex;
+    margin: 10px; 
+    width: 280px;
 }
 
 .addItemInput {

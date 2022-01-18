@@ -25,3 +25,10 @@ D:\Work\.Net\BlazorApp\obj\Debug\net6.0\BlazorApp.dll
 D:\Work\.Net\BlazorApp\obj\Debug\net6.0\ref\BlazorApp.dll
 D:\Work\.Net\BlazorApp\obj\Debug\net6.0\BlazorApp.pdb
 D:\Work\.Net\BlazorApp\obj\Debug\net6.0\BlazorApp.genruntimeconfig.cache
+D:\Work\.Net\BlazorApp\bin\Debug\net6.0\Radzen.Blazor.dll
+D:\Work\.Net\BlazorApp\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+D:\Work\.Net\BlazorApp\obj\Debug\net6.0\BlazorApp.csproj.CopyComplete
+D:\Work\.Net\BlazorApp\obj\Debug\net6.0\scopedcss\Components\IconButton.razor.rz.scp.css
+D:\Work\.Net\BlazorApp\obj\Debug\net6.0\scopedcss\Components\RoundButton.razor.rz.scp.css
+D:\Work\.Net\BlazorApp\obj\Debug\net6.0\scopedcss\Components\Task.razor.rz.scp.css
+D:\Work\.Net\BlazorApp\obj\Debug\net6.0\scopedcss\Components\Todolist.razor.rz.scp.css
